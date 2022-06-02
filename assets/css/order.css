@@ -1,3 +1,6 @@
+.section-order {
+    margin-top: 150px;
+}
 .search {
     background: #eeeeee;
     text-align: center;
@@ -8,26 +11,26 @@
     font-size: 25px;
 }
 
-.search .form-search {
+.search .form-search-order {
     text-align: center;
     color: #000;
 }
 
-.search .form-search ul {
+.search .form-search-order ul {
     display: inline-flex;
 }
 
-.search .form-search ul li {
+.search .form-search-order ul li {
     display: inline-grid;
     padding: 16px;
 }
 
-.search .form-search ul li label{
+.search .form-search-order ul li label{
     font-size: 15px;
     font-weight: 500;
 }
 
-.search .form-search ul li input {
+.search .form-search-order ul li input {
     margin-top: 11px;
     padding: 15px;
 }

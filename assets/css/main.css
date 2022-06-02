@@ -444,6 +444,7 @@
 .box-quickfilter {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .lst-quickfilter {
@@ -487,12 +488,13 @@
 .trending ul {
     display: flex;
     flex-flow: row wrap;
-    padding: 12px 0 50px 85px;
+    justify-content: center;
+    padding: 0px 0px 50px 10px;
 }
 
 .trending ul li {
     position: relative;
-    width: 340px;
+    width: 290px;
 }
 
 .trending ul li span {
