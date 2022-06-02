@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/order.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Tra Cứu Đơn Hàng</title>
+</head>
+<body>
+    
+    <!--Breadcumb-->
+    <div class="container section">
+        <ul class="breadcumb">
+            <li>
+                <a href="#"><i class='bx bxs-home'></i> Trang Chủ</a>
+                <meta property="position" content="1">
+            </li>
+            <li>
+                <span>›</span>
+            <a href="/dtdd-oppo">Tra Cứu Đơn Hàng</a>
+            <meta property="position" content="2">
+        </li>
+        </ul>
+    </div>
+
+    <!--Tra cứu-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search">
+                    <h2>KIỂM TRA THÔNG TIN ĐƠN HÀNG & THÔNG TIN VẬN CHUYỂN</h2>
+                   
+                    <div class="form-search">
+                        <ul>
+                            <li>
+                                <label>Số điện thoại:</label>
+                                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Bắt buộc">
+                            </li>
+                            <li>
+                                <label>Mã đơn hàng:</label>
+                                <input type="text" name="codeOrder" id="codeOrder" placeholder="Bắt buộc">
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p id="error" class="contact-form-error">Vui lòng nhập thông tin!</p>
+                    
+                    <button class="btn-check" type="button" onclick="changeColor();"><a href="#">KIỂM TRA</a></button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Thông tin tra cứu-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5 mb-6">
+                <div class="info-order">
+
+                    <div class="badge">
+                        <h2>THÔNG TIN ĐƠN HÀNG CỦA BẠN</h2>
+                        <div class="border-badge">
+                            <p style="display: contents;font-weight: 600;font-size: 15px;">ĐƠN HÀNG #1234</p>
+                            <span>Đã giao</span>
+                        </div>
+                    </div>    
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Màu</th>
+                                <th>Giá niêm yết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>iPhone 11 64GB I Chính hãng VN/A</td>
+                                <td>1</td>
+                                <td>Đen</td>
+                                <td>99.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 11 64GB I Chính hãng VN/A</td>
+                                <td>1</td>
+                                <td>Xanh</td>
+                                <td>99.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 11 64GB I Chính hãng VN/A</td>
+                                <td>1</td>
+                                <td>Trắng</td>
+                                <td>99.000đ</td>
+                            </tr>  
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td style="font-weight: 800;">Tổng thanh toán</td>
+                                <td style="font-weight: 800;">297.000đ</td>
+                            </tr>                  
+                        </tbody>
+                    </table>
+
+                    <h2 style="margin:20px 0 20px 0;">Thông tin vận chuyển</h2>
+
+                    <div class="border-info">
+                        <p>
+                            Tên người nhận:
+                            <span style="font-weight: 700;">Hồ Quốc Thắng</span>
+                        </p>
+                        <br>
+                        <p>
+                            Địa chỉ Email:
+                            <span style="font-weight: 700;">qthwng.01@gmail.com</span>
+                        </p>
+                        <br>
+                        <p>
+                            Hình thức thanh toán: 
+                            <span style="font-weight: 700;">COD</span>
+                        </p>
+                        <br>
+                        <p>
+                            Địa chỉ giao hàng:
+                            <span style="font-weight: 700;">46 Bạch Đằng, Phường 2, Tân Bình, Thành phố Hồ Chí Minh</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 5rem;"></div>
+
+    <footer>
+        <div class="container footer-ct">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="ul-style">
+                        <li>
+                            <a href="">Lịch sử mua hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Cộng tác bán hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Tìm hiểu về trả góp</a>
+                        </li>
+                        <li>
+                            <a href="">Chính sách bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="ul-style">
+                        <li>
+                            <a href="">Giới thiệu cửa hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Tuyển dụng</a>
+                        </li>
+                        <li>
+                            <a href="">Gửi góp ý, khiếu nại</a>
+                        </li>
+                        <li>
+                            <a href="">Đổi trả</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="ul-style">
+                        <li>
+                            <a href="">Tổng đài hỗ trợ (Miễn phí gọi)</a>
+                        </li>
+                        <li>
+                            <a href="tel:18001234" style="color: blue;">Gọi mua: 18001234 (7:30 - 22:00)</a>
+                        </li>
+                        <li>
+                            <a href=""style="color: blue;">Kỹ thuật: 18001234 (7:30 - 22:00)</a>
+                        </li>
+                        <li>
+                            <a href=""style="color: blue;">Bảo hành: 18001234 (7:30 - 22:00)</a>
+                        </li>
+                        <li>
+                            <a href=""style="color: blue;">Đổi trả: 18001234 (7:30 - 22:00)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="ul-style" style="display: inline-flex;">
+                        <li>
+                            <a href="">
+                                <img src="../img/img-bocongthuong.jpg" width="80" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img style="margin-top: 10px;" src="../img/img-bocongthuong2.jpg" width="80" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img style="margin-top: 10px;" src="../img/img-aninhmang.png" width="80" alt=""></a>
+                        </li>
+                    </ul>
+
+                    <div class="col">
+                        <p style="font-size:14px;font-weight: 500;">Website đối tác</p>
+                        <ul class="ul-style-2" style="display: inline-flex;">
+                            <li>
+                                <a href="">
+                                    <img src="../img/img-dienmayxanh.jpg" width="100" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../img/img-dienmayxanh.jpg" width="100" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../img/img-dienmayxanh.jpg" width="100" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../img/img-dienmayxanh.jpg" width="100" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </footer>
+   
+    <div class="footer-bot">
+        <p>Dev by C & T</p>
+    </div>
+
+    <script src="../assets/js/order.js"></script>
+</body>
+</html>
